@@ -18,6 +18,13 @@
 		A412E6B61E2BC4BC00B1646F /* RecipeHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412E6B51E2BC4BC00B1646F /* RecipeHolder.swift */; };
 		A46AE2FC1E2BD018001A2CB1 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46AE2FB1E2BD018001A2CB1 /* Style.swift */; };
 		A46AE2FE1E2BD326001A2CB1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46AE2FD1E2BD326001A2CB1 /* WebViewController.swift */; };
+		A46AE3061E2BE034001A2CB1 /* cooking1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A46AE3001E2BE034001A2CB1 /* cooking1.jpg */; };
+		A46AE3071E2BE034001A2CB1 /* cooking2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A46AE3011E2BE034001A2CB1 /* cooking2.jpg */; };
+		A46AE3081E2BE034001A2CB1 /* cooking3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A46AE3021E2BE034001A2CB1 /* cooking3.jpg */; };
+		A46AE3091E2BE034001A2CB1 /* cooking4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A46AE3031E2BE034001A2CB1 /* cooking4.jpg */; };
+		A46AE30A1E2BE034001A2CB1 /* cooking5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A46AE3041E2BE034001A2CB1 /* cooking5.jpg */; };
+		A46AE30B1E2BE034001A2CB1 /* cooking6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A46AE3051E2BE034001A2CB1 /* cooking6.jpg */; };
+		A46AE30D1E2BE28E001A2CB1 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46AE30C1E2BE28E001A2CB1 /* TopView.swift */; };
 		A4B67D881E2A0C9F007310D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67D871E2A0C9F007310D5 /* AppDelegate.swift */; };
 		A4B67D8D1E2A0C9F007310D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B67D8B1E2A0C9F007310D5 /* Main.storyboard */; };
 		A4B67D8F1E2A0C9F007310D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B67D8E1E2A0C9F007310D5 /* Assets.xcassets */; };
@@ -67,6 +74,13 @@
 		A412E6B51E2BC4BC00B1646F /* RecipeHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeHolder.swift; sourceTree = "<group>"; };
 		A46AE2FB1E2BD018001A2CB1 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		A46AE2FD1E2BD326001A2CB1 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A46AE3001E2BE034001A2CB1 /* cooking1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cooking1.jpg; path = Resources/cooking1.jpg; sourceTree = "<group>"; };
+		A46AE3011E2BE034001A2CB1 /* cooking2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cooking2.jpg; path = Resources/cooking2.jpg; sourceTree = "<group>"; };
+		A46AE3021E2BE034001A2CB1 /* cooking3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cooking3.jpg; path = Resources/cooking3.jpg; sourceTree = "<group>"; };
+		A46AE3031E2BE034001A2CB1 /* cooking4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cooking4.jpg; path = Resources/cooking4.jpg; sourceTree = "<group>"; };
+		A46AE3041E2BE034001A2CB1 /* cooking5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cooking5.jpg; path = Resources/cooking5.jpg; sourceTree = "<group>"; };
+		A46AE3051E2BE034001A2CB1 /* cooking6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cooking6.jpg; path = Resources/cooking6.jpg; sourceTree = "<group>"; };
+		A46AE30C1E2BE28E001A2CB1 /* TopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopView.swift; path = Views/TopView.swift; sourceTree = "<group>"; };
 		A4B67D841E2A0C9F007310D5 /* CookWhat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookWhat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B67D871E2A0C9F007310D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4B67D8C1E2A0C9F007310D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +150,19 @@
 			name = ViewModels;
 			sourceTree = "<group>";
 		};
+		A46AE2FF1E2BDFD6001A2CB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A46AE3001E2BE034001A2CB1 /* cooking1.jpg */,
+				A46AE3011E2BE034001A2CB1 /* cooking2.jpg */,
+				A46AE3021E2BE034001A2CB1 /* cooking3.jpg */,
+				A46AE3031E2BE034001A2CB1 /* cooking4.jpg */,
+				A46AE3041E2BE034001A2CB1 /* cooking5.jpg */,
+				A46AE3051E2BE034001A2CB1 /* cooking6.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		A4B67D7B1E2A0C9F007310D5 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +194,7 @@
 				A4B67DBB1E2B3641007310D5 /* StoryBoards */,
 				A4B67DB81E2ABE94007310D5 /* Models */,
 				A4B67DB51E2ABE81007310D5 /* ViewControllers */,
+				A46AE2FF1E2BDFD6001A2CB1 /* Resources */,
 				A4B67D8B1E2A0C9F007310D5 /* Main.storyboard */,
 				A46AE2FB1E2BD018001A2CB1 /* Style.swift */,
 				A4B67D8E1E2A0C9F007310D5 /* Assets.xcassets */,
@@ -228,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				A4B67DC11E2B69A0007310D5 /* CameraView.swift */,
+				A46AE30C1E2BE28E001A2CB1 /* TopView.swift */,
 				A412E6AD1E2BC04E00B1646F /* ResultsTableViewCell.swift */,
 				A412E6AE1E2BC04E00B1646F /* ResultsTableViewCell.xib */,
 			);
@@ -361,12 +390,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46AE30A1E2BE034001A2CB1 /* cooking5.jpg in Resources */,
 				A4B67D921E2A0C9F007310D5 /* LaunchScreen.storyboard in Resources */,
+				A46AE3091E2BE034001A2CB1 /* cooking4.jpg in Resources */,
 				A4B67D8F1E2A0C9F007310D5 /* Assets.xcassets in Resources */,
 				A412E6B01E2BC04E00B1646F /* ResultsTableViewCell.xib in Resources */,
+				A46AE3061E2BE034001A2CB1 /* cooking1.jpg in Resources */,
 				A412E6A51E2BB5AD00B1646F /* ResultsViewController.storyboard in Resources */,
+				A46AE30B1E2BE034001A2CB1 /* cooking6.jpg in Resources */,
 				A4B67DBA1E2B361C007310D5 /* CameraViewController.storyboard in Resources */,
 				A4B67D8D1E2A0C9F007310D5 /* Main.storyboard in Resources */,
+				A46AE3081E2BE034001A2CB1 /* cooking3.jpg in Resources */,
+				A46AE3071E2BE034001A2CB1 /* cooking2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +564,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46AE30D1E2BE28E001A2CB1 /* TopView.swift in Sources */,
 				A412E6A31E2BB08200B1646F /* ResultsViewController.swift in Sources */,
 				A412E6A91E2BB67900B1646F /* RecipeAPIClient.swift in Sources */,
 				A412E6B21E2BC2A800B1646F /* ResultsViewModel.swift in Sources */,

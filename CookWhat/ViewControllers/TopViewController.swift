@@ -10,8 +10,6 @@ import UIKit
 
 class TopViewController: UIViewController {
 
-    @IBOutlet weak var startButton: UIButton!
-
     // MARK: - View LifeCycle
     
     override func viewDidLoad() {
@@ -19,11 +17,12 @@ class TopViewController: UIViewController {
 
         bindEvents()
     }
-
+    
     // MARK: -  Initialize
     
     fileprivate func bindEvents() {
-        startButton.addTarget(self, action: #selector(TopViewController.didClickStartButton), for: .touchUpInside)
+        let view = self.view as! TopView
+        view.startButton.addTarget(self, action: #selector(TopViewController.didClickStartButton), for: .touchUpInside)
     }
     
     // MARK: - Callbacks

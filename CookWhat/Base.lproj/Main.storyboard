@@ -17,33 +17,61 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="TopView" customModule="CookWhat" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-XS-xtZ">
-                                <rect key="frame" x="137.5" y="617" width="100" height="30"/>
-                                <color key="backgroundColor" red="0.78109524260703056" green="0.90484607545678719" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cooking4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nQm-7o-8Lt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-XS-xtZ">
+                                <rect key="frame" x="168" y="607" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="vpb-hA-x8C"/>
+                                    <constraint firstAttribute="height" constant="40" id="oj2-5t-8w3"/>
+                                    <constraint firstAttribute="width" constant="40" id="vpb-hA-x8C"/>
                                 </constraints>
-                                <state key="normal" title="とる"/>
+                                <state key="normal" backgroundImage="capture_button"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CookWhat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbx-qK-5z5">
+                                <rect key="frame" x="106" y="279.5" width="164" height="38"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="take, cook, &amp; eat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvx-po-s9t">
+                                <rect key="frame" x="99" y="337.5" width="177" height="25"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hvb-XS-xtZ" secondAttribute="bottom" constant="20" id="0sR-oK-cef"/>
+                            <constraint firstItem="nQm-7o-8Lt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="A8F-Xq-AJE"/>
+                            <constraint firstItem="dvx-po-s9t" firstAttribute="top" secondItem="Gbx-qK-5z5" secondAttribute="bottom" constant="20" id="DAF-Pf-8vz"/>
+                            <constraint firstItem="dvx-po-s9t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H3U-9V-8pM"/>
+                            <constraint firstItem="Gbx-qK-5z5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q5r-t4-oPo"/>
+                            <constraint firstAttribute="trailing" secondItem="nQm-7o-8Lt" secondAttribute="trailing" id="YUl-Rf-Tz2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nQm-7o-8Lt" secondAttribute="bottom" id="eW8-se-HSI"/>
+                            <constraint firstItem="Gbx-qK-5z5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-35" id="kmz-ed-NNa"/>
+                            <constraint firstItem="nQm-7o-8Lt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o1y-cN-jro"/>
                             <constraint firstItem="hvb-XS-xtZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rJp-F4-RVY"/>
                         </constraints>
+                        <connections>
+                            <outlet property="backgroundImageView" destination="nQm-7o-8Lt" id="1B3-oe-OZr"/>
+                            <outlet property="startButton" destination="hvb-XS-xtZ" id="HS1-dI-Esl"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="nM0-WG-3b3"/>
-                    <connections>
-                        <outlet property="startButton" destination="hvb-XS-xtZ" id="vaU-l3-Nwn"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="972" y="38.23088455772114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="capture_button" width="38" height="38"/>
+        <image name="cooking4.jpg" width="640" height="377"/>
+    </resources>
 </document>
