@@ -57,7 +57,7 @@ class CameraView: UIView {
     
     fileprivate func setupTipViews() {
         self.captureTipView = CMPopTipView(message: "複数枚撮影できます")
-        self.captureTipView!.backgroundColor = .orange
+        self.captureTipView!.backgroundColor = Style.themeOrange
         self.captureTipView!.textColor = .white
         self.captureTipView!.preferredPointDirection = .down
         self.captureTipView!.hasGradientBackground = false
@@ -65,7 +65,7 @@ class CameraView: UIView {
         self.captureTipView!.borderWidth = 0
 
         self.searchTipView = CMPopTipView(message: "撮影が終わったら検索")
-        self.searchTipView!.backgroundColor = .orange
+        self.searchTipView!.backgroundColor = Style.themeOrange
         self.searchTipView!.textColor = .white
         self.searchTipView!.preferredPointDirection = .down
         self.searchTipView!.hasGradientBackground = false

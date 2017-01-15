@@ -24,6 +24,8 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     var capturedImage = [UIImage]()
     
+    var isCapturing = false
+    
     // MARK: - View LifeCycle
     
     override func viewDidLoad() {
@@ -37,6 +39,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
 
         navigationController?.setNavigationBarHidden(true, animated: animated)
         setupCamera()
+        capturedImage = []
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -54,7 +57,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     override func viewDidDisappear(_ animated: Bool) {
         let view = self.view as! CameraView
         view.captureTipView?.dismiss(animated: true)
-        
+        view.searchTipView?.dismiss(animated: true)
         session.stopRunning()
         
         super.viewDidDisappear(animated)
@@ -128,6 +131,9 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     // MARK: - Callbacks
     
     func didClickCaptureButton() {
+        guard !isCapturing else { return }
+        isCapturing = true
+        
         let view = self.view as! CameraView
 
         view.captureTipView?.dismiss(animated: true)
@@ -165,6 +171,8 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
             let image = UIImage(data: photoData)!
             
             capturedImage.append(image)
+            sleep(1)
+            self.isCapturing = false
         }
     }
     
