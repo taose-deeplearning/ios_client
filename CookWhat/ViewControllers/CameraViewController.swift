@@ -34,7 +34,8 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
+        navigationController?.setNavigationBarHidden(true, animated: animated)
         setupCamera()
     }
     
@@ -43,6 +44,11 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         
         let view = self.view as! CameraView
         view.captureTipView?.presentPointing(at: view.captureButton, in: view.footerView, animated: true)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -145,7 +151,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         let recipeHolder = RecipeHolder(foodStuffs: ["たまねぎ"])
         vc.model = ResultsViewModel(recipeHolder: recipeHolder)
         
-        present(vc, animated: true, completion: nil)
+        navigationController!.pushViewController(vc, animated: true)
     }
 
     // MARK: - AVCapturePhotoCaptureDelegate
