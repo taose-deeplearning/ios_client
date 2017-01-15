@@ -11,6 +11,7 @@ import UIKit
 class Style: NSObject {
 
     static let themeOrange = UIColor(red: 255 / 255, green: 147 / 255, blue: 42 / 255, alpha: 1)
+    static let backgroundOrange = UIColor(red: 248 / 255, green: 243 / 255, blue: 232 / 255, alpha: 1)
     
     static func setDefaultAppearance() {
         let navigationBar = UINavigationBar.appearance()

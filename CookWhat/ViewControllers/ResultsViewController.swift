@@ -42,6 +42,8 @@ class ResultsViewController: UIViewController, UITableViewDelegate {
         tableView.dataSource = model
         tableView.register(UINib(nibName: ResultsTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: model.cellIdentifier)
         tableView.tableFooterView = UIView() // To remove needless border lines
+        tableView.backgroundColor = Style.backgroundOrange
+        tableView.separatorColor = .clear
     }
     
     fileprivate func setBind() {
@@ -61,7 +63,9 @@ class ResultsViewController: UIViewController, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 110
     }
+    
+    
     
 }

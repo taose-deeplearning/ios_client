@@ -15,7 +15,7 @@ class RecipeHolder: NSObject {
     let recipes = Observable<[Recipe]>([])
     
     var currentPage = 1
-    let perPage = 10
+    let perPage = 100
     
     let isUpdating = Observable<Bool>(false)
     

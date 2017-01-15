@@ -157,7 +157,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         let vc = storyboard.instantiateInitialViewController() as! ResultsViewController
         vc.modalTransitionStyle = .crossDissolve
         
-        let recipeHolder = RecipeHolder(foodStuffs: ["たまねぎ"])
+        let recipeHolder = RecipeHolder(foodStuffs: ["にんじん"])
         vc.model = ResultsViewModel(recipeHolder: recipeHolder)
         
         navigationController!.pushViewController(vc, animated: true)
