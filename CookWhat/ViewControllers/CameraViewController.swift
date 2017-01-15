@@ -52,9 +52,12 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
+        let view = self.view as! CameraView
+        view.captureTipView?.dismiss(animated: true)
         
         session.stopRunning()
+        
+        super.viewDidDisappear(animated)
     }
     
     // MARK: - Initialize
