@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DC480F92C01C6EAA251FD52 /* Pods_CookWhatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7241C51CB698DCC415E4C0F /* Pods_CookWhatUITests.framework */; };
+		A412E6A91E2BB67900B1646F /* APIDummyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412E6A81E2BB67900B1646F /* APIDummyClient.swift */; };
 		A4B67D881E2A0C9F007310D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67D871E2A0C9F007310D5 /* AppDelegate.swift */; };
 		A4B67D8D1E2A0C9F007310D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B67D8B1E2A0C9F007310D5 /* Main.storyboard */; };
 		A4B67D8F1E2A0C9F007310D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B67D8E1E2A0C9F007310D5 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		70D7D4BB3CDCA8E4948C3B48 /* Pods-CookWhatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookWhatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookWhatUITests/Pods-CookWhatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		86A2C69AB07C0353E6AA2A82 /* Pods-CookWhat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookWhat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookWhat/Pods-CookWhat.release.xcconfig"; sourceTree = "<group>"; };
 		970CA8272D5DD14BE83A837C /* Pods_CookWhatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookWhatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A412E6A81E2BB67900B1646F /* APIDummyClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDummyClient.swift; sourceTree = "<group>"; };
 		A4B67D841E2A0C9F007310D5 /* CookWhat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookWhat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B67D871E2A0C9F007310D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4B67D8C1E2A0C9F007310D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		A4B67DB81E2ABE94007310D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A412E6A81E2BB67900B1646F /* APIDummyClient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -493,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A412E6A91E2BB67900B1646F /* APIDummyClient.swift in Sources */,
 				A4B67DB71E2ABE81007310D5 /* TopViewController.swift in Sources */,
 				A4B67D881E2A0C9F007310D5 /* AppDelegate.swift in Sources */,
 				A4B67DBF1E2B367A007310D5 /* CameraViewController.swift in Sources */,

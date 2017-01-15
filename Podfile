@@ -6,6 +6,8 @@ target 'CookWhat' do
   use_frameworks!
 
   pod 'CMPopTipView'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 
   # Pods for CookWhat
 
