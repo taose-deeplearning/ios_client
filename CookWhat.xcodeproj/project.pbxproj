@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DC480F92C01C6EAA251FD52 /* Pods_CookWhatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7241C51CB698DCC415E4C0F /* Pods_CookWhatUITests.framework */; };
 		A4B67D881E2A0C9F007310D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67D871E2A0C9F007310D5 /* AppDelegate.swift */; };
-		A4B67D8A1E2A0C9F007310D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67D891E2A0C9F007310D5 /* ViewController.swift */; };
 		A4B67D8D1E2A0C9F007310D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B67D8B1E2A0C9F007310D5 /* Main.storyboard */; };
 		A4B67D8F1E2A0C9F007310D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B67D8E1E2A0C9F007310D5 /* Assets.xcassets */; };
 		A4B67D921E2A0C9F007310D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B67D901E2A0C9F007310D5 /* LaunchScreen.storyboard */; };
 		A4B67D9D1E2A0CA0007310D5 /* CookWhatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67D9C1E2A0CA0007310D5 /* CookWhatTests.swift */; };
 		A4B67DA81E2A0CA0007310D5 /* CookWhatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67DA71E2A0CA0007310D5 /* CookWhatUITests.swift */; };
+		A4B67DB71E2ABE81007310D5 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67DB61E2ABE81007310D5 /* TopViewController.swift */; };
+		A4B67DBA1E2B361C007310D5 /* CameraViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B67DB91E2B361C007310D5 /* CameraViewController.storyboard */; };
+		A4B67DBD1E2B3655007310D5 /* ResultsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B67DBC1E2B3655007310D5 /* ResultsViewController.storyboard */; };
+		A4B67DBF1E2B367A007310D5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67DBE1E2B367A007310D5 /* CameraViewController.swift */; };
+		A4B67DC21E2B69A0007310D5 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67DC11E2B69A0007310D5 /* CameraView.swift */; };
+		DC2CD305F0E0882FB9679900 /* Pods_CookWhat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466918D7364C467A09CB323A /* Pods_CookWhat.framework */; };
+		E8A3963A9588ECB338B48CC7 /* Pods_CookWhatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970CA8272D5DD14BE83A837C /* Pods_CookWhatTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		104E42EDC6C3F301B301B774 /* Pods-CookWhat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookWhat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookWhat/Pods-CookWhat.debug.xcconfig"; sourceTree = "<group>"; };
+		2EB6F590EF42527A40FC1B92 /* Pods-CookWhatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookWhatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookWhatUITests/Pods-CookWhatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		466918D7364C467A09CB323A /* Pods_CookWhat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookWhat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		694B97315D14406F2F227F7C /* Pods-CookWhatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookWhatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookWhatTests/Pods-CookWhatTests.release.xcconfig"; sourceTree = "<group>"; };
+		70D7D4BB3CDCA8E4948C3B48 /* Pods-CookWhatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookWhatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookWhatUITests/Pods-CookWhatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		86A2C69AB07C0353E6AA2A82 /* Pods-CookWhat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookWhat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookWhat/Pods-CookWhat.release.xcconfig"; sourceTree = "<group>"; };
+		970CA8272D5DD14BE83A837C /* Pods_CookWhatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookWhatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B67D841E2A0C9F007310D5 /* CookWhat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookWhat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B67D871E2A0C9F007310D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4B67D891E2A0C9F007310D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4B67D8C1E2A0C9F007310D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4B67D8E1E2A0C9F007310D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4B67D911E2A0C9F007310D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +60,13 @@
 		A4B67DA31E2A0CA0007310D5 /* CookWhatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookWhatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B67DA71E2A0CA0007310D5 /* CookWhatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookWhatUITests.swift; sourceTree = "<group>"; };
 		A4B67DA91E2A0CA0007310D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B67DB61E2ABE81007310D5 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		A4B67DB91E2B361C007310D5 /* CameraViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CameraViewController.storyboard; path = StoryBoards/CameraViewController.storyboard; sourceTree = "<group>"; };
+		A4B67DBC1E2B3655007310D5 /* ResultsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultsViewController.storyboard; sourceTree = "<group>"; };
+		A4B67DBE1E2B367A007310D5 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A4B67DC11E2B69A0007310D5 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = Views/CameraView.swift; sourceTree = "<group>"; };
+		A7241C51CB698DCC415E4C0F /* Pods_CookWhatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookWhatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5081FC5B6B057AFC6A42FEF /* Pods-CookWhatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookWhatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookWhatTests/Pods-CookWhatTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC2CD305F0E0882FB9679900 /* Pods_CookWhat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A3963A9588ECB338B48CC7 /* Pods_CookWhatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC480F92C01C6EAA251FD52 /* Pods_CookWhatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56D1F81B0F42232BA8A88512 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				104E42EDC6C3F301B301B774 /* Pods-CookWhat.debug.xcconfig */,
+				86A2C69AB07C0353E6AA2A82 /* Pods-CookWhat.release.xcconfig */,
+				F5081FC5B6B057AFC6A42FEF /* Pods-CookWhatTests.debug.xcconfig */,
+				694B97315D14406F2F227F7C /* Pods-CookWhatTests.release.xcconfig */,
+				2EB6F590EF42527A40FC1B92 /* Pods-CookWhatUITests.debug.xcconfig */,
+				70D7D4BB3CDCA8E4948C3B48 /* Pods-CookWhatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A4B67D7B1E2A0C9F007310D5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +117,8 @@
 				A4B67D9B1E2A0CA0007310D5 /* CookWhatTests */,
 				A4B67DA61E2A0CA0007310D5 /* CookWhatUITests */,
 				A4B67D851E2A0C9F007310D5 /* Products */,
+				56D1F81B0F42232BA8A88512 /* Pods */,
+				D648865FF2EA3E8CBF3C3586 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +136,10 @@
 			isa = PBXGroup;
 			children = (
 				A4B67D871E2A0C9F007310D5 /* AppDelegate.swift */,
-				A4B67D891E2A0C9F007310D5 /* ViewController.swift */,
+				A4B67DC01E2B6282007310D5 /* Views */,
+				A4B67DBB1E2B3641007310D5 /* StoryBoards */,
+				A4B67DB81E2ABE94007310D5 /* Models */,
+				A4B67DB51E2ABE81007310D5 /* ViewControllers */,
 				A4B67D8B1E2A0C9F007310D5 /* Main.storyboard */,
 				A4B67D8E1E2A0C9F007310D5 /* Assets.xcassets */,
 				A4B67D901E2A0C9F007310D5 /* LaunchScreen.storyboard */,
@@ -125,6 +166,49 @@
 			path = CookWhatUITests;
 			sourceTree = "<group>";
 		};
+		A4B67DB51E2ABE81007310D5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4B67DB61E2ABE81007310D5 /* TopViewController.swift */,
+				A4B67DBE1E2B367A007310D5 /* CameraViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A4B67DB81E2ABE94007310D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A4B67DBB1E2B3641007310D5 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				A4B67DB91E2B361C007310D5 /* CameraViewController.storyboard */,
+				A4B67DBC1E2B3655007310D5 /* ResultsViewController.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		A4B67DC01E2B6282007310D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A4B67DC11E2B69A0007310D5 /* CameraView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D648865FF2EA3E8CBF3C3586 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				466918D7364C467A09CB323A /* Pods_CookWhat.framework */,
+				970CA8272D5DD14BE83A837C /* Pods_CookWhatTests.framework */,
+				A7241C51CB698DCC415E4C0F /* Pods_CookWhatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4B67DAC1E2A0CA0007310D5 /* Build configuration list for PBXNativeTarget "CookWhat" */;
 			buildPhases = (
+				409E342530D36A744D2E1918 /* [CP] Check Pods Manifest.lock */,
 				A4B67D801E2A0C9F007310D5 /* Sources */,
 				A4B67D811E2A0C9F007310D5 /* Frameworks */,
 				A4B67D821E2A0C9F007310D5 /* Resources */,
+				0EB227E8974BDBF207A0A3AD /* [CP] Embed Pods Frameworks */,
+				9CE42166E923620C986CADAE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4B67DAF1E2A0CA0007310D5 /* Build configuration list for PBXNativeTarget "CookWhatTests" */;
 			buildPhases = (
+				21945BAD8483B92C594D3766 /* [CP] Check Pods Manifest.lock */,
 				A4B67D941E2A0CA0007310D5 /* Sources */,
 				A4B67D951E2A0CA0007310D5 /* Frameworks */,
 				A4B67D961E2A0CA0007310D5 /* Resources */,
+				1085A5895ABCD8B1C7DC3C4E /* [CP] Embed Pods Frameworks */,
+				EF75E410CAEEB56E17BEC7CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4B67DB21E2A0CA0007310D5 /* Build configuration list for PBXNativeTarget "CookWhatUITests" */;
 			buildPhases = (
+				E8BC12069D9D62B29E770B97 /* [CP] Check Pods Manifest.lock */,
 				A4B67D9F1E2A0CA0007310D5 /* Sources */,
 				A4B67DA01E2A0CA0007310D5 /* Frameworks */,
 				A4B67DA11E2A0CA0007310D5 /* Resources */,
+				312D1D47976C68E6DABFA367 /* [CP] Embed Pods Frameworks */,
+				B9952437AF8860B5600D0AD6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +286,7 @@
 				TargetAttributes = {
 					A4B67D831E2A0C9F007310D5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UZ5VRYJJEP;
 						ProvisioningStyle = Automatic;
 					};
 					A4B67D971E2A0CA0007310D5 = {
@@ -234,6 +328,8 @@
 			files = (
 				A4B67D921E2A0C9F007310D5 /* LaunchScreen.storyboard in Resources */,
 				A4B67D8F1E2A0C9F007310D5 /* Assets.xcassets in Resources */,
+				A4B67DBD1E2B3655007310D5 /* ResultsViewController.storyboard in Resources */,
+				A4B67DBA1E2B361C007310D5 /* CameraViewController.storyboard in Resources */,
 				A4B67D8D1E2A0C9F007310D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +350,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EB227E8974BDBF207A0A3AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookWhat/Pods-CookWhat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1085A5895ABCD8B1C7DC3C4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookWhatTests/Pods-CookWhatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21945BAD8483B92C594D3766 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		312D1D47976C68E6DABFA367 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookWhatUITests/Pods-CookWhatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		409E342530D36A744D2E1918 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CE42166E923620C986CADAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookWhat/Pods-CookWhat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9952437AF8860B5600D0AD6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookWhatUITests/Pods-CookWhatUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8BC12069D9D62B29E770B97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF75E410CAEEB56E17BEC7CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookWhatTests/Pods-CookWhatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A4B67D801E2A0C9F007310D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4B67D8A1E2A0C9F007310D5 /* ViewController.swift in Sources */,
+				A4B67DB71E2ABE81007310D5 /* TopViewController.swift in Sources */,
 				A4B67D881E2A0C9F007310D5 /* AppDelegate.swift in Sources */,
+				A4B67DBF1E2B367A007310D5 /* CameraViewController.swift in Sources */,
+				A4B67DC21E2B69A0007310D5 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,8 +646,10 @@
 		};
 		A4B67DAD1E2A0CA0007310D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 104E42EDC6C3F301B301B774 /* Pods-CookWhat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UZ5VRYJJEP;
 				INFOPLIST_FILE = CookWhat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "taose-deeplearning.CookWhat";
@@ -422,8 +660,10 @@
 		};
 		A4B67DAE1E2A0CA0007310D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86A2C69AB07C0353E6AA2A82 /* Pods-CookWhat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UZ5VRYJJEP;
 				INFOPLIST_FILE = CookWhat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "taose-deeplearning.CookWhat";
@@ -434,6 +674,7 @@
 		};
 		A4B67DB01E2A0CA0007310D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5081FC5B6B057AFC6A42FEF /* Pods-CookWhatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -448,6 +689,7 @@
 		};
 		A4B67DB11E2A0CA0007310D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694B97315D14406F2F227F7C /* Pods-CookWhatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +704,7 @@
 		};
 		A4B67DB31E2A0CA0007310D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EB6F590EF42527A40FC1B92 /* Pods-CookWhatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CookWhatUITests/Info.plist;
@@ -475,6 +718,7 @@
 		};
 		A4B67DB41E2A0CA0007310D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D7D4BB3CDCA8E4948C3B48 /* Pods-CookWhatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CookWhatUITests/Info.plist;
@@ -505,6 +749,7 @@
 				A4B67DAE1E2A0CA0007310D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4B67DAF1E2A0CA0007310D5 /* Build configuration list for PBXNativeTarget "CookWhatTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +758,7 @@
 				A4B67DB11E2A0CA0007310D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4B67DB21E2A0CA0007310D5 /* Build configuration list for PBXNativeTarget "CookWhatUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +767,7 @@
 				A4B67DB41E2A0CA0007310D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
