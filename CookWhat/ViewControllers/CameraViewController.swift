@@ -113,6 +113,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         
         view.captureButton.addTarget(self, action: #selector(CameraViewController.didClickCaptureButton), for: .touchUpInside)
         view.backButton.addTarget(self, action: #selector(CameraViewController.didClickBackButton), for: .touchUpInside)
+        view.searchButton.addTarget(self, action: #selector(CameraViewController.didClickSearchButton), for: .touchUpInside)
     }
     
     // MARK: - Callbacks
@@ -137,7 +138,14 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     }
     
     func didClickSearchButton() {
-        print("search click")
+        let storyboard = UIStoryboard(name: "ResultsViewController", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! ResultsViewController
+        vc.modalTransitionStyle = .crossDissolve
+        
+        let recipeHolder = RecipeHolder(foodStuffs: ["たまねぎ"])
+        vc.model = ResultsViewModel(recipeHolder: recipeHolder)
+        
+        present(vc, animated: true, completion: nil)
     }
 
     // MARK: - AVCapturePhotoCaptureDelegate

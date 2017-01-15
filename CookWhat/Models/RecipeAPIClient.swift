@@ -1,5 +1,5 @@
 //
-//  APIDummyClient.swift
+//  RecipeAPIClient.swift
 //  CookWhat
 //
 //  Created by tsugita on 2017/01/15.
@@ -10,24 +10,21 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-// Dummy class to test this app can show recipes correctly.
-// in production, this app posts images and get recipes, so doesn't call this endpoint directly.
-class APIDummyClient: NSObject {
+class RecipeAPIClient: NSObject {
 
-    static let sharedInstance = APIDummyClient()
+    static let sharedInstance = RecipeAPIClient()
     
     let baseUrl = "http://54.238.208.56"
     let searchEndpoint = "/search"
-    let querySample = ["query": "たまねぎ"]
     
-    func getRecipes() {
+    func getRecipes(query: [String:String], completion: @escaping (JSON) -> ()) {
         let url = URL(string: baseUrl + searchEndpoint)!
         
-        Alamofire.request(url, method: HTTPMethod.get, parameters: querySample, encoding: URLEncoding.default, headers: nil).responseJSON { response in
+        Alamofire.request(url, method: HTTPMethod.get, parameters: query, encoding: URLEncoding.default, headers: nil).responseJSON { response in
             switch (response.result) {
             case .success(let value):
                 let json = JSON(value)
-                print(json)
+                completion(json)
             case .failure(let error):
                 // TODO: error handling
                 print(error)

@@ -8,6 +8,8 @@ target 'CookWhat' do
   pod 'CMPopTipView'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'SDWebImage'
+  pod "Bond"
 
   # Pods for CookWhat
 

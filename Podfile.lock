@@ -1,18 +1,29 @@
 PODS:
   - Alamofire (4.2.0)
+  - Bond (5.3.1):
+    - ReactiveKit (~> 3.1)
   - CMPopTipView (2.3.0)
+  - ReactiveKit (3.1.1)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - SwiftyJSON (3.1.3)
 
 DEPENDENCIES:
   - Alamofire
+  - Bond
   - CMPopTipView
+  - SDWebImage
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  Bond: 4e67616dedd6515adbe25ad360848e73f3a142a1
   CMPopTipView: 774e0230b5c73abb3c39051da6d8a383373c4f7f
+  ReactiveKit: e830df3deeb6cdf2acd18cee5cf07cb25488ae4e
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
 
-PODFILE CHECKSUM: 8ad94d0ca7588557c5aa1410967ecade65593b00
+PODFILE CHECKSUM: f74dcc953dd15673e82f08278a60748b056f08af
 
 COCOAPODS: 1.1.1

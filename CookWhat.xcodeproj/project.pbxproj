@@ -8,7 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1DC480F92C01C6EAA251FD52 /* Pods_CookWhatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7241C51CB698DCC415E4C0F /* Pods_CookWhatUITests.framework */; };
-		A412E6A91E2BB67900B1646F /* APIDummyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412E6A81E2BB67900B1646F /* APIDummyClient.swift */; };
+		A412E6A31E2BB08200B1646F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412E6A21E2BB08200B1646F /* ResultsViewController.swift */; };
+		A412E6A51E2BB5AD00B1646F /* ResultsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A412E6A41E2BB5AD00B1646F /* ResultsViewController.storyboard */; };
+		A412E6A91E2BB67900B1646F /* RecipeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412E6A81E2BB67900B1646F /* RecipeAPIClient.swift */; };
+		A412E6AF1E2BC04E00B1646F /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412E6AD1E2BC04E00B1646F /* ResultsTableViewCell.swift */; };
+		A412E6B01E2BC04E00B1646F /* ResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A412E6AE1E2BC04E00B1646F /* ResultsTableViewCell.xib */; };
+		A412E6B21E2BC2A800B1646F /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412E6B11E2BC2A800B1646F /* ResultsViewModel.swift */; };
+		A412E6B41E2BC3C600B1646F /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412E6B31E2BC3C600B1646F /* Recipe.swift */; };
+		A412E6B61E2BC4BC00B1646F /* RecipeHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412E6B51E2BC4BC00B1646F /* RecipeHolder.swift */; };
 		A4B67D881E2A0C9F007310D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67D871E2A0C9F007310D5 /* AppDelegate.swift */; };
 		A4B67D8D1E2A0C9F007310D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B67D8B1E2A0C9F007310D5 /* Main.storyboard */; };
 		A4B67D8F1E2A0C9F007310D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B67D8E1E2A0C9F007310D5 /* Assets.xcassets */; };
@@ -17,7 +24,6 @@
 		A4B67DA81E2A0CA0007310D5 /* CookWhatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67DA71E2A0CA0007310D5 /* CookWhatUITests.swift */; };
 		A4B67DB71E2ABE81007310D5 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67DB61E2ABE81007310D5 /* TopViewController.swift */; };
 		A4B67DBA1E2B361C007310D5 /* CameraViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B67DB91E2B361C007310D5 /* CameraViewController.storyboard */; };
-		A4B67DBD1E2B3655007310D5 /* ResultsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B67DBC1E2B3655007310D5 /* ResultsViewController.storyboard */; };
 		A4B67DBF1E2B367A007310D5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67DBE1E2B367A007310D5 /* CameraViewController.swift */; };
 		A4B67DC21E2B69A0007310D5 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67DC11E2B69A0007310D5 /* CameraView.swift */; };
 		DC2CD305F0E0882FB9679900 /* Pods_CookWhat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466918D7364C467A09CB323A /* Pods_CookWhat.framework */; };
@@ -49,7 +55,14 @@
 		70D7D4BB3CDCA8E4948C3B48 /* Pods-CookWhatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookWhatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookWhatUITests/Pods-CookWhatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		86A2C69AB07C0353E6AA2A82 /* Pods-CookWhat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookWhat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookWhat/Pods-CookWhat.release.xcconfig"; sourceTree = "<group>"; };
 		970CA8272D5DD14BE83A837C /* Pods_CookWhatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookWhatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A412E6A81E2BB67900B1646F /* APIDummyClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDummyClient.swift; sourceTree = "<group>"; };
+		A412E6A21E2BB08200B1646F /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		A412E6A41E2BB5AD00B1646F /* ResultsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ResultsViewController.storyboard; path = StoryBoards/ResultsViewController.storyboard; sourceTree = "<group>"; };
+		A412E6A81E2BB67900B1646F /* RecipeAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeAPIClient.swift; sourceTree = "<group>"; };
+		A412E6AD1E2BC04E00B1646F /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsTableViewCell.swift; path = Views/ResultsTableViewCell.swift; sourceTree = "<group>"; };
+		A412E6AE1E2BC04E00B1646F /* ResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResultsTableViewCell.xib; path = Views/ResultsTableViewCell.xib; sourceTree = "<group>"; };
+		A412E6B11E2BC2A800B1646F /* ResultsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsViewModel.swift; path = ViewModels/ResultsViewModel.swift; sourceTree = "<group>"; };
+		A412E6B31E2BC3C600B1646F /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		A412E6B51E2BC4BC00B1646F /* RecipeHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeHolder.swift; sourceTree = "<group>"; };
 		A4B67D841E2A0C9F007310D5 /* CookWhat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookWhat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B67D871E2A0C9F007310D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4B67D8C1E2A0C9F007310D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,7 +77,6 @@
 		A4B67DA91E2A0CA0007310D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4B67DB61E2ABE81007310D5 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		A4B67DB91E2B361C007310D5 /* CameraViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CameraViewController.storyboard; path = StoryBoards/CameraViewController.storyboard; sourceTree = "<group>"; };
-		A4B67DBC1E2B3655007310D5 /* ResultsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultsViewController.storyboard; sourceTree = "<group>"; };
 		A4B67DBE1E2B367A007310D5 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		A4B67DC11E2B69A0007310D5 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = Views/CameraView.swift; sourceTree = "<group>"; };
 		A7241C51CB698DCC415E4C0F /* Pods_CookWhatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookWhatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +124,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A412E6AA1E2BBC2200B1646F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A412E6B11E2BC2A800B1646F /* ResultsViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
 		A4B67D7B1E2A0C9F007310D5 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				A4B67D871E2A0C9F007310D5 /* AppDelegate.swift */,
+				A412E6AA1E2BBC2200B1646F /* ViewModels */,
 				A4B67DC01E2B6282007310D5 /* Views */,
 				A4B67DBB1E2B3641007310D5 /* StoryBoards */,
 				A4B67DB81E2ABE94007310D5 /* Models */,
@@ -173,6 +194,7 @@
 			children = (
 				A4B67DB61E2ABE81007310D5 /* TopViewController.swift */,
 				A4B67DBE1E2B367A007310D5 /* CameraViewController.swift */,
+				A412E6A21E2BB08200B1646F /* ResultsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -180,7 +202,9 @@
 		A4B67DB81E2ABE94007310D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A412E6A81E2BB67900B1646F /* APIDummyClient.swift */,
+				A412E6A81E2BB67900B1646F /* RecipeAPIClient.swift */,
+				A412E6B31E2BC3C600B1646F /* Recipe.swift */,
+				A412E6B51E2BC4BC00B1646F /* RecipeHolder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,8 +212,8 @@
 		A4B67DBB1E2B3641007310D5 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				A412E6A41E2BB5AD00B1646F /* ResultsViewController.storyboard */,
 				A4B67DB91E2B361C007310D5 /* CameraViewController.storyboard */,
-				A4B67DBC1E2B3655007310D5 /* ResultsViewController.storyboard */,
 			);
 			name = StoryBoards;
 			sourceTree = "<group>";
@@ -198,6 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				A4B67DC11E2B69A0007310D5 /* CameraView.swift */,
+				A412E6AD1E2BC04E00B1646F /* ResultsTableViewCell.swift */,
+				A412E6AE1E2BC04E00B1646F /* ResultsTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -331,7 +357,8 @@
 			files = (
 				A4B67D921E2A0C9F007310D5 /* LaunchScreen.storyboard in Resources */,
 				A4B67D8F1E2A0C9F007310D5 /* Assets.xcassets in Resources */,
-				A4B67DBD1E2B3655007310D5 /* ResultsViewController.storyboard in Resources */,
+				A412E6B01E2BC04E00B1646F /* ResultsTableViewCell.xib in Resources */,
+				A412E6A51E2BB5AD00B1646F /* ResultsViewController.storyboard in Resources */,
 				A4B67DBA1E2B361C007310D5 /* CameraViewController.storyboard in Resources */,
 				A4B67D8D1E2A0C9F007310D5 /* Main.storyboard in Resources */,
 			);
@@ -496,9 +523,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A412E6A91E2BB67900B1646F /* APIDummyClient.swift in Sources */,
+				A412E6A31E2BB08200B1646F /* ResultsViewController.swift in Sources */,
+				A412E6A91E2BB67900B1646F /* RecipeAPIClient.swift in Sources */,
+				A412E6B21E2BC2A800B1646F /* ResultsViewModel.swift in Sources */,
+				A412E6AF1E2BC04E00B1646F /* ResultsTableViewCell.swift in Sources */,
 				A4B67DB71E2ABE81007310D5 /* TopViewController.swift in Sources */,
+				A412E6B61E2BC4BC00B1646F /* RecipeHolder.swift in Sources */,
 				A4B67D881E2A0C9F007310D5 /* AppDelegate.swift in Sources */,
+				A412E6B41E2BC3C600B1646F /* Recipe.swift in Sources */,
 				A4B67DBF1E2B367A007310D5 /* CameraViewController.swift in Sources */,
 				A4B67DC21E2B69A0007310D5 /* CameraView.swift in Sources */,
 			);
