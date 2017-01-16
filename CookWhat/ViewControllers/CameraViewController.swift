@@ -10,6 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 import Photos
+import Bond
 
 class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
 
@@ -24,7 +25,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     var capturedImage = [UIImage]()
     
-    var isCapturing = false
+    var isCapturing = Observable<Bool>(false)
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -131,16 +132,20 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         view.captureButton.addTarget(self, action: #selector(CameraViewController.didClickCaptureButton), for: .touchUpInside)
         view.backButton.addTarget(self, action: #selector(CameraViewController.didClickBackButton), for: .touchUpInside)
         view.searchButton.addTarget(self, action: #selector(CameraViewController.didClickSearchButton), for: .touchUpInside)
+        
+        _ = isCapturing.observeNext { isCapturing in
+            view.captureButton.isEnabled = !isCapturing
+        }
     }
     
     // MARK: - Callbacks
     
     func didClickCaptureButton() {
-        guard !isCapturing else { return }
-        isCapturing = true
-        
-        let view = self.view as! CameraView
+        guard !isCapturing.value else { return }
+        isCapturing.value = true
 
+        let view = self.view as! CameraView
+        
         view.captureTipView?.dismiss(animated: true)
         
         if capturedImage.count == 0 {
@@ -176,8 +181,10 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
             let image = UIImage(data: photoData)!
             
             capturedImage.append(image)
-            sleep(1)
-            self.isCapturing = false
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.isCapturing.value = false
+            }
         }
     }
     
