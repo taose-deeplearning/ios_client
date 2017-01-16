@@ -11,8 +11,13 @@ import UIKit
 class ResultsViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    let headerView = UINib(nibName: ResultsTableHeaderView.nibName, bundle: nil).instantiate(withOwner: self, options: nil).first as! ResultsTableHeaderView
     
     var model: ResultsViewModel!
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
     
     // MARK: - View LifeCycle
     
@@ -25,10 +30,12 @@ class ResultsViewController: UIViewController, UITableViewDelegate {
         model.recipeHolder.fetch()
     }
 
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        headerView.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: 50)
     }
-
+    
     // MARK: - Initialize
     
     fileprivate func setNavigationBar() {
@@ -48,6 +55,9 @@ class ResultsViewController: UIViewController, UITableViewDelegate {
         tableView.tableFooterView = UIView() // To remove needless border lines
         tableView.backgroundColor = Style.backgroundOrange
         tableView.separatorColor = .clear
+        
+        headerView.setDescription(foodStuffs: model.recipeHolder.foodStuffs)
+        tableView.tableHeaderView = headerView
     }
     
     fileprivate func setBind() {
@@ -69,7 +79,5 @@ class ResultsViewController: UIViewController, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 110
     }
-    
-    
     
 }

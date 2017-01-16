@@ -35,6 +35,8 @@
 		A4B67DBA1E2B361C007310D5 /* CameraViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B67DB91E2B361C007310D5 /* CameraViewController.storyboard */; };
 		A4B67DBF1E2B367A007310D5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67DBE1E2B367A007310D5 /* CameraViewController.swift */; };
 		A4B67DC21E2B69A0007310D5 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67DC11E2B69A0007310D5 /* CameraView.swift */; };
+		A4F82C001E2C69C4002907AE /* ResultsTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F82BFF1E2C69C4002907AE /* ResultsTableHeaderView.xib */; };
+		A4F82C021E2C6A4D002907AE /* ResultsTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F82C011E2C6A4D002907AE /* ResultsTableHeaderView.swift */; };
 		DC2CD305F0E0882FB9679900 /* Pods_CookWhat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466918D7364C467A09CB323A /* Pods_CookWhat.framework */; };
 		E8A3963A9588ECB338B48CC7 /* Pods_CookWhatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970CA8272D5DD14BE83A837C /* Pods_CookWhatTests.framework */; };
 /* End PBXBuildFile section */
@@ -97,6 +99,8 @@
 		A4B67DB91E2B361C007310D5 /* CameraViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CameraViewController.storyboard; path = StoryBoards/CameraViewController.storyboard; sourceTree = "<group>"; };
 		A4B67DBE1E2B367A007310D5 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		A4B67DC11E2B69A0007310D5 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = Views/CameraView.swift; sourceTree = "<group>"; };
+		A4F82BFF1E2C69C4002907AE /* ResultsTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResultsTableHeaderView.xib; path = Views/ResultsTableHeaderView.xib; sourceTree = "<group>"; };
+		A4F82C011E2C6A4D002907AE /* ResultsTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsTableHeaderView.swift; path = Views/ResultsTableHeaderView.swift; sourceTree = "<group>"; };
 		A7241C51CB698DCC415E4C0F /* Pods_CookWhatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookWhatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5081FC5B6B057AFC6A42FEF /* Pods-CookWhatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookWhatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookWhatTests/Pods-CookWhatTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,6 +263,8 @@
 				A46AE30C1E2BE28E001A2CB1 /* TopView.swift */,
 				A412E6AD1E2BC04E00B1646F /* ResultsTableViewCell.swift */,
 				A412E6AE1E2BC04E00B1646F /* ResultsTableViewCell.xib */,
+				A4F82BFF1E2C69C4002907AE /* ResultsTableHeaderView.xib */,
+				A4F82C011E2C6A4D002907AE /* ResultsTableHeaderView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -392,6 +398,7 @@
 			files = (
 				A46AE30A1E2BE034001A2CB1 /* cooking5.jpg in Resources */,
 				A4B67D921E2A0C9F007310D5 /* LaunchScreen.storyboard in Resources */,
+				A4F82C001E2C69C4002907AE /* ResultsTableHeaderView.xib in Resources */,
 				A46AE3091E2BE034001A2CB1 /* cooking4.jpg in Resources */,
 				A4B67D8F1E2A0C9F007310D5 /* Assets.xcassets in Resources */,
 				A412E6B01E2BC04E00B1646F /* ResultsTableViewCell.xib in Resources */,
@@ -571,6 +578,7 @@
 				A412E6AF1E2BC04E00B1646F /* ResultsTableViewCell.swift in Sources */,
 				A4B67DB71E2ABE81007310D5 /* TopViewController.swift in Sources */,
 				A412E6B61E2BC4BC00B1646F /* RecipeHolder.swift in Sources */,
+				A4F82C021E2C6A4D002907AE /* ResultsTableHeaderView.swift in Sources */,
 				A4B67D881E2A0C9F007310D5 /* AppDelegate.swift in Sources */,
 				A46AE2FE1E2BD326001A2CB1 /* WebViewController.swift in Sources */,
 				A412E6B41E2BC3C600B1646F /* Recipe.swift in Sources */,

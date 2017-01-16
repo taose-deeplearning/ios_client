@@ -16,11 +16,11 @@
             <rect key="frame" x="0.0" y="0.0" width="404" height="158"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="404" height="158"/>
+                <rect key="frame" x="0.0" y="0.0" width="404" height="157"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ig-tv-JLq">
-                        <rect key="frame" x="15" y="15" width="374" height="142.5"/>
+                        <rect key="frame" x="15" y="0.0" width="374" height="142.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AIk-W6-E5O">
                                 <rect key="frame" x="10" y="10" width="122.5" height="122.5"/>
@@ -29,25 +29,25 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="descriptionLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wx3-dF-Wrr">
-                                <rect key="frame" x="152.5" y="34" width="201.5" height="13"/>
+                                <rect key="frame" x="152.5" y="33" width="201.5" height="13"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k16-lJ-R8M">
-                                <rect key="frame" x="152.5" y="10" width="201.5" height="14"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                <rect key="frame" x="152.5" y="10" width="201.5" height="13"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqr-FM-CWx">
-                                <rect key="frame" x="152" y="119" width="34.5" height="13"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="costLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqr-FM-CWx">
+                                <rect key="frame" x="152" y="119" width="62.5" height="13"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzD-To-Xiq">
-                                <rect key="frame" x="319.5" y="119.5" width="34.5" height="13"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="indicationLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzD-To-Xiq">
+                                <rect key="frame" x="257.5" y="119.5" width="96.5" height="13"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -73,9 +73,9 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="5ig-tv-JLq" secondAttribute="trailing" constant="15" id="0lM-Oz-ePw"/>
-                    <constraint firstItem="5ig-tv-JLq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="1aS-nV-J0s"/>
+                    <constraint firstItem="5ig-tv-JLq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1aS-nV-J0s"/>
                     <constraint firstItem="5ig-tv-JLq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ge5-Yt-Sgg"/>
-                    <constraint firstAttribute="bottom" secondItem="5ig-tv-JLq" secondAttribute="bottom" id="x1P-Gh-DSS"/>
+                    <constraint firstAttribute="bottom" secondItem="5ig-tv-JLq" secondAttribute="bottom" constant="15" id="x1P-Gh-DSS"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
