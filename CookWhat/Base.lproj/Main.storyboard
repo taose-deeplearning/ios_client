@@ -33,17 +33,24 @@
                                 <state key="normal" backgroundImage="capture_button"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CookWhat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbx-qK-5z5">
-                                <rect key="frame" x="106" y="279.5" width="164" height="38"/>
+                                <rect key="frame" x="106" y="304.5" width="164" height="38"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="take, cook, &amp; eat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvx-po-s9t">
-                                <rect key="frame" x="99" y="337.5" width="177" height="25"/>
+                                <rect key="frame" x="99" y="362.5" width="177" height="25"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cook_icon" translatesAutoresizingMaskIntoConstraints="NO" id="fhC-Ak-pRu">
+                                <rect key="frame" x="152" y="224.5" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="R64-lx-ShU"/>
+                                    <constraint firstAttribute="width" constant="70" id="jUN-bZ-z9I"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -51,10 +58,12 @@
                             <constraint firstItem="nQm-7o-8Lt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="A8F-Xq-AJE"/>
                             <constraint firstItem="dvx-po-s9t" firstAttribute="top" secondItem="Gbx-qK-5z5" secondAttribute="bottom" constant="20" id="DAF-Pf-8vz"/>
                             <constraint firstItem="dvx-po-s9t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H3U-9V-8pM"/>
+                            <constraint firstItem="fhC-Ak-pRu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MUM-3o-Jqu"/>
                             <constraint firstItem="Gbx-qK-5z5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q5r-t4-oPo"/>
+                            <constraint firstItem="Gbx-qK-5z5" firstAttribute="top" secondItem="fhC-Ak-pRu" secondAttribute="bottom" constant="10" id="Sir-jN-2LH"/>
                             <constraint firstAttribute="trailing" secondItem="nQm-7o-8Lt" secondAttribute="trailing" id="YUl-Rf-Tz2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nQm-7o-8Lt" secondAttribute="bottom" id="eW8-se-HSI"/>
-                            <constraint firstItem="Gbx-qK-5z5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-35" id="kmz-ed-NNa"/>
+                            <constraint firstItem="Gbx-qK-5z5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-10" id="kmz-ed-NNa"/>
                             <constraint firstItem="nQm-7o-8Lt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o1y-cN-jro"/>
                             <constraint firstItem="hvb-XS-xtZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rJp-F4-RVY"/>
                         </constraints>
@@ -72,6 +81,7 @@
     </scenes>
     <resources>
         <image name="capture_button" width="38" height="38"/>
+        <image name="cook_icon" width="72" height="72"/>
         <image name="cooking4.jpg" width="640" height="377"/>
     </resources>
 </document>

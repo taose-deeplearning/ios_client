@@ -21,17 +21,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qY-fW-y9f">
+                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pm6-2r-oJx">
+                                <rect key="frame" x="112" y="472" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="8Di-dy-yf8"/>
+                                    <constraint firstAttribute="height" constant="40" id="kXC-ti-K6G"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="capture_button"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cooking4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pfC-WI-8L2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="0qY-fW-y9f" secondAttribute="bottom" id="CAg-H9-8OL"/>
-                            <constraint firstItem="0qY-fW-y9f" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="I93-xk-PyG"/>
-                            <constraint firstItem="0qY-fW-y9f" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Ptf-O8-GBQ"/>
-                            <constraint firstAttribute="trailing" secondItem="0qY-fW-y9f" secondAttribute="trailing" id="WC2-eI-ggy"/>
+                            <constraint firstItem="pfC-WI-8L2" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="eWz-v5-XiI"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="pfC-WI-8L2" secondAttribute="bottom" id="o51-V3-nt5"/>
+                            <constraint firstItem="pfC-WI-8L2" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="op9-CF-ld2"/>
+                            <constraint firstAttribute="trailing" secondItem="pfC-WI-8L2" secondAttribute="trailing" id="zJd-fl-vau"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,4 +47,8 @@
             <point key="canvasLocation" x="60" y="368.36581709145429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="capture_button" width="38" height="38"/>
+        <image name="cooking4.jpg" width="640" height="377"/>
+    </resources>
 </document>
