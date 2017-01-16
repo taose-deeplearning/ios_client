@@ -25,13 +25,17 @@ class ResultsViewController: UIViewController, UITableViewDelegate {
         model.recipeHolder.fetch()
     }
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
+
     // MARK: - Initialize
     
     fileprivate func setNavigationBar() {
         let titleLabel = UILabel()
         titleLabel.text = "レシピ"
         titleLabel.font = UIFont(name: "HiraKakuProN-W6", size: 15)
-        titleLabel.textColor = .white
+        titleLabel.textColor = Style.accentBrown
         titleLabel.sizeToFit()
 
         navigationItem.titleView = titleLabel

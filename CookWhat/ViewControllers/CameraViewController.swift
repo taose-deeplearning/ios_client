@@ -25,6 +25,10 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     var capturedImage = [UIImage]()
     
     var isCapturing = false
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     // MARK: - View LifeCycle
     
@@ -50,8 +54,9 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     }
 
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
+        
+        super.viewWillDisappear(animated)
     }
     
     override func viewDidDisappear(_ animated: Bool) {

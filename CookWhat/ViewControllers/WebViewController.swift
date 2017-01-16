@@ -22,6 +22,10 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         self.urlString = urlString
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
+    
     // MARK: - View LifeCycle
     
     override func viewDidLoad() {
@@ -49,7 +53,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         let titleLabel = UILabel()
         titleLabel.text = navigationTitle.substring(to: navigationTitle.index(navigationTitle.startIndex, offsetBy: 9)) + ".."
         titleLabel.font = UIFont(name: "HiraKakuProN-W6", size: 15)
-        titleLabel.textColor = .white
+        titleLabel.textColor = Style.accentBrown
         titleLabel.sizeToFit()
         
         navigationItem.titleView = titleLabel

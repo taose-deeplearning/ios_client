@@ -10,6 +10,10 @@ import UIKit
 
 class TopViewController: UIViewController {
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
     // MARK: - View LifeCycle
     
     override func viewDidLoad() {
