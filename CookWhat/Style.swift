@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class Style: NSObject {
 
@@ -25,6 +26,10 @@ class Style: NSObject {
         
         let barButtonItem = UIBarButtonItem.appearance()
         barButtonItem.setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -100, vertical: -100), for: .default)
+        
+        SVProgressHUD.setDefaultStyle(.custom)
+        SVProgressHUD.appearance().backgroundColor = .clear
+        SVProgressHUD.appearance().foregroundColor = accentBrown
     }
         
 }

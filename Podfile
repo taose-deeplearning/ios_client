@@ -10,6 +10,7 @@ target 'CookWhat' do
   pod 'SwiftyJSON'
   pod 'SDWebImage'
   pod "Bond"
+  pod 'SVProgressHUD'
 
   # Pods for CookWhat
 
