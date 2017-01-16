@@ -39,6 +39,12 @@ open CookWhat.xcworkspace
 
 * there, you can see `Signing` item. click `Team` select box and select yourself(maybe you can choose apple ID).
 
+#### Change bundle identifier
+
+* a bundle identifier cannot be used in several teams(personal developers). so you have to modify the bundle identifier. same as above, open `CookWhat` in `TARGETS`.
+
+* modify `Bundle Identifier` from `taose-deeplearning.CookWhat` to something like `foo-bar.CookWhat`.
+
 #### Run.
 
 * on top-left side of the Xcode window, you can see something like `CookWhat > iPhone 7`. click it and change to `CookWhat > your-iPhone-name`.
