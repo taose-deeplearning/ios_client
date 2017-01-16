@@ -22,7 +22,7 @@ class ResultsTableHeaderView: UIView {
     }
     
     func setDescription(foodStuffs: [String]) {
-        descriptionLabel.text = "ある食材: \(foodStuffs.joined(separator: (", ")))"
+        descriptionLabel.text = "食材: \(foodStuffs.joined(separator: (", ")))"
     }
     
 }
