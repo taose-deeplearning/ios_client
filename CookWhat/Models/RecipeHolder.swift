@@ -11,7 +11,7 @@ import Bond
 
 class RecipeHolder: NSObject {
 
-    let foodStuffs: [String]
+    let foodStuffHolder: FoodStuffHolder
     let recipes = Observable<[Recipe]>([])
     
     var currentPage = 1
@@ -19,8 +19,8 @@ class RecipeHolder: NSObject {
     
     let isUpdating = Observable<Bool>(false)
     
-    init(foodStuffs: [String]) {
-        self.foodStuffs = foodStuffs
+    init(foodStuffHolder: FoodStuffHolder) {
+        self.foodStuffHolder = foodStuffHolder
         
         super.init()
     }
@@ -31,7 +31,7 @@ class RecipeHolder: NSObject {
         isUpdating.value = true
         
         let query = [
-            "query": foodStuffs.joined(separator: ","),
+            "query": foodStuffHolder.toQueryValue(),
             "page": String(currentPage),
             "per": String(perPage)
         ]

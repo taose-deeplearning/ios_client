@@ -56,7 +56,7 @@ class ResultsViewController: UIViewController, UITableViewDelegate {
         tableView.backgroundColor = Style.backgroundOrange
         tableView.separatorColor = .clear
         
-        headerView.setDescription(foodStuffs: model.recipeHolder.foodStuffs)
+        headerView.setDescription(foodStuffs: model.recipeHolder.foodStuffHolder.keywords)
         tableView.tableHeaderView = headerView
     }
     

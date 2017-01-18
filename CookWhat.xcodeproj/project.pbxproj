@@ -35,6 +35,8 @@
 		A4B67DBA1E2B361C007310D5 /* CameraViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B67DB91E2B361C007310D5 /* CameraViewController.storyboard */; };
 		A4B67DBF1E2B367A007310D5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67DBE1E2B367A007310D5 /* CameraViewController.swift */; };
 		A4B67DC21E2B69A0007310D5 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B67DC11E2B69A0007310D5 /* CameraView.swift */; };
+		A4D1F93F1E2E141200A2F742 /* FoodRecognitionApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D1F93E1E2E141200A2F742 /* FoodRecognitionApiClient.swift */; };
+		A4D1F9411E2FA61900A2F742 /* FoodStuffHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D1F9401E2FA61900A2F742 /* FoodStuffHolder.swift */; };
 		A4F82C001E2C69C4002907AE /* ResultsTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F82BFF1E2C69C4002907AE /* ResultsTableHeaderView.xib */; };
 		A4F82C021E2C6A4D002907AE /* ResultsTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F82C011E2C6A4D002907AE /* ResultsTableHeaderView.swift */; };
 		DC2CD305F0E0882FB9679900 /* Pods_CookWhat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466918D7364C467A09CB323A /* Pods_CookWhat.framework */; };
@@ -99,6 +101,8 @@
 		A4B67DB91E2B361C007310D5 /* CameraViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CameraViewController.storyboard; path = StoryBoards/CameraViewController.storyboard; sourceTree = "<group>"; };
 		A4B67DBE1E2B367A007310D5 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		A4B67DC11E2B69A0007310D5 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = Views/CameraView.swift; sourceTree = "<group>"; };
+		A4D1F93E1E2E141200A2F742 /* FoodRecognitionApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodRecognitionApiClient.swift; sourceTree = "<group>"; };
+		A4D1F9401E2FA61900A2F742 /* FoodStuffHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodStuffHolder.swift; sourceTree = "<group>"; };
 		A4F82BFF1E2C69C4002907AE /* ResultsTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResultsTableHeaderView.xib; path = Views/ResultsTableHeaderView.xib; sourceTree = "<group>"; };
 		A4F82C011E2C6A4D002907AE /* ResultsTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsTableHeaderView.swift; path = Views/ResultsTableHeaderView.swift; sourceTree = "<group>"; };
 		A7241C51CB698DCC415E4C0F /* Pods_CookWhatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookWhatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,7 +245,9 @@
 			isa = PBXGroup;
 			children = (
 				A412E6A81E2BB67900B1646F /* RecipeAPIClient.swift */,
+				A4D1F93E1E2E141200A2F742 /* FoodRecognitionApiClient.swift */,
 				A412E6B31E2BC3C600B1646F /* Recipe.swift */,
+				A4D1F9401E2FA61900A2F742 /* FoodStuffHolder.swift */,
 				A412E6B51E2BC4BC00B1646F /* RecipeHolder.swift */,
 			);
 			path = Models;
@@ -572,6 +578,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A46AE30D1E2BE28E001A2CB1 /* TopView.swift in Sources */,
+				A4D1F93F1E2E141200A2F742 /* FoodRecognitionApiClient.swift in Sources */,
 				A412E6A31E2BB08200B1646F /* ResultsViewController.swift in Sources */,
 				A412E6A91E2BB67900B1646F /* RecipeAPIClient.swift in Sources */,
 				A412E6B21E2BC2A800B1646F /* ResultsViewModel.swift in Sources */,
@@ -584,6 +591,7 @@
 				A412E6B41E2BC3C600B1646F /* Recipe.swift in Sources */,
 				A4B67DBF1E2B367A007310D5 /* CameraViewController.swift in Sources */,
 				A4B67DC21E2B69A0007310D5 /* CameraView.swift in Sources */,
+				A4D1F9411E2FA61900A2F742 /* FoodStuffHolder.swift in Sources */,
 				A46AE2FC1E2BD018001A2CB1 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

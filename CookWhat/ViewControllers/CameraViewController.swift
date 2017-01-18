@@ -24,9 +24,10 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     var camera: AVCaptureDevice!
     
     var capturedImage = [UIImage]()
-    
-    var isCapturing = Observable<Bool>(false)
+    var foodStuffHolder = FoodStuffHolder()
 
+    var isCapturing = Observable<Bool>(false)
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -45,6 +46,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         navigationController?.setNavigationBarHidden(true, animated: animated)
         setupCamera()
         capturedImage = []
+        foodStuffHolder = FoodStuffHolder()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -167,7 +169,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         let vc = storyboard.instantiateInitialViewController() as! ResultsViewController
         vc.modalTransitionStyle = .crossDissolve
         
-        let recipeHolder = RecipeHolder(foodStuffs: ["にんじん"])
+        let recipeHolder = RecipeHolder(foodStuffHolder: foodStuffHolder)
         vc.model = ResultsViewModel(recipeHolder: recipeHolder)
         
         navigationController!.pushViewController(vc, animated: true)
@@ -181,6 +183,8 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
             let image = UIImage(data: photoData)!
             
             capturedImage.append(image)
+            
+            foodStuffHolder.getFoodKeywords(image: image)
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 self.isCapturing.value = false
