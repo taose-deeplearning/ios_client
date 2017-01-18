@@ -46,7 +46,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         navigationController?.setNavigationBarHidden(true, animated: animated)
         setupCamera()
         capturedImage = []
-        foodStuffHolder = FoodStuffHolder()
+        foodStuffHolder.keywords.value = []
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -137,6 +137,10 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         
         _ = isCapturing.observeNext { isCapturing in
             view.captureButton.isEnabled = !isCapturing
+        }
+        
+        _ = foodStuffHolder.keywords.observeNext { keywords in
+            view.searchButton.isEnabled = !(keywords.count == 0)
         }
     }
     

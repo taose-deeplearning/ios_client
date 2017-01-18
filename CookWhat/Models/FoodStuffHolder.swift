@@ -7,31 +7,31 @@
 //
 
 import UIKit
+import Bond
 
 class FoodStuffHolder: NSObject {
 
-    var keywords = [String]()
+    let keywords = Observable<[String]>([])
     
     func getFoodKeywords(image: UIImage) {
         FoodRecognitionApiClient.sharedInstance.recognizeImage(image: image, completion: { json in
             if let foodsJson = json["foods"].array {
-                for foodJson in foodsJson {
-                    self.add(keyword: foodJson["name"].stringValue)
-                }
+                let keywords = foodsJson.map { $0["name"].stringValue }
+                self.add(keywordAttributes: keywords)
             }
         })
     }
     
-    func add(keyword: String) {
-        guard !keywords.contains(keyword) else {
-            return
+    func add(keywordAttributes: [String]) {
+        let newKeywords = keywordAttributes.filter { keyword in
+            !keywords.value.contains(keyword)
         }
         
-        keywords.append(keyword)
+        keywords.value += newKeywords
     }
  
     func toQueryValue() -> String {
-        return keywords.joined(separator: ",")
+        return keywords.value.joined(separator: ",")
     }
     
 }
