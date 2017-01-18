@@ -38,9 +38,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="take, cook, &amp; eat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvx-po-s9t">
-                                <rect key="frame" x="99" y="362.5" width="177" height="25"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="take, cook, eat !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvx-po-s9t">
+                                <rect key="frame" x="126" y="357.5" width="124.5" height="36"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -56,7 +56,7 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hvb-XS-xtZ" secondAttribute="bottom" constant="20" id="0sR-oK-cef"/>
                             <constraint firstItem="nQm-7o-8Lt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="A8F-Xq-AJE"/>
-                            <constraint firstItem="dvx-po-s9t" firstAttribute="top" secondItem="Gbx-qK-5z5" secondAttribute="bottom" constant="20" id="DAF-Pf-8vz"/>
+                            <constraint firstItem="dvx-po-s9t" firstAttribute="top" secondItem="Gbx-qK-5z5" secondAttribute="bottom" constant="15" id="DAF-Pf-8vz"/>
                             <constraint firstItem="dvx-po-s9t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H3U-9V-8pM"/>
                             <constraint firstItem="fhC-Ak-pRu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MUM-3o-Jqu"/>
                             <constraint firstItem="Gbx-qK-5z5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q5r-t4-oPo"/>
