@@ -11,6 +11,7 @@ target 'CookWhat' do
   pod 'SDWebImage'
   pod "Bond"
   pod 'SVProgressHUD'
+  pod 'YLProgressBar'
 
   # Pods for CookWhat
 

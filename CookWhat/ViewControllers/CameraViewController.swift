@@ -26,7 +26,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     var capturedImage = [UIImage]()
     var foodStuffHolder = FoodStuffHolder()
 
-    var isCapturing = Observable<Bool>(false)
+    let isCapturing = Observable<Bool>(false)
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -142,6 +142,8 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         _ = foodStuffHolder.keywords.observeNext { keywords in
             view.searchButton.isEnabled = !(keywords.count == 0)
         }
+        
+        _ = foodStuffHolder.progress.bind(to: view.progresss)
     }
     
     // MARK: - Callbacks

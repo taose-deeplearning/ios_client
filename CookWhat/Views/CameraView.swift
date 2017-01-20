@@ -8,6 +8,8 @@
 
 import UIKit
 import CMPopTipView
+import YLProgressBar
+import Bond
 
 class CameraView: UIView {
 
@@ -19,12 +21,17 @@ class CameraView: UIView {
     
     var captureTipView: CMPopTipView?
     var searchTipView: CMPopTipView?
+
+    var progressBar = YLProgressBar()
+    let progresss = Observable<Float>(0)
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
         setupViews()
         setupTipViews()
+        setupProgressBar()
+        setupBinding()
     }
     
     fileprivate func setupViews() {
@@ -52,7 +59,7 @@ class CameraView: UIView {
         self.footerView.addSubview(self.backButton)
         self.footerView.addSubview(self.searchButton)
         self.addSubview(self.footerView)
-        
+        self.addSubview(self.progressBar)
     }
     
     fileprivate func setupTipViews() {
@@ -71,7 +78,23 @@ class CameraView: UIView {
         self.searchTipView!.hasGradientBackground = false
         self.searchTipView!.has3DStyle = false
         self.searchTipView!.borderWidth = 0
-
+    }
+    
+    fileprivate func setupProgressBar() {
+        self.progressBar.type = .flat
+        self.progressBar.progressTintColors = [Style.themeOrange]
+        self.progressBar.hideTrack = true
+    }
+    
+    fileprivate func setupBinding() {
+        _ = self.progresss.observeNext { progress in
+            self.progressBar.progress = CGFloat(progress)
+            
+            let alpha = progress == 0 ? 0 : 1
+            UIView.animate(withDuration: 0.3) {
+                self.progressBar.alpha = CGFloat(alpha)
+            }
+        }
     }
     
     override func layoutSubviews() {
@@ -90,6 +113,8 @@ class CameraView: UIView {
         self.captureButton.center = CGPoint(x: self.footerView.bounds.midX, y: self.footerView.bounds.midY)
         
         self.previewView.frame = self.frame
+        
+        self.progressBar.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 20)
     }
     
 

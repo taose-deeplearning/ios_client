@@ -17,19 +17,23 @@ class FoodRecognitionApiClient: NSObject {
     let baseUrl = "https://predict-food-2017.herokuapp.com"
     let searchEndpoint = "/predictor/upload/"
     
-    func recognizeImage(image: UIImage, completion: @escaping (JSON) -> ()) {
+    func recognizeImage(image: UIImage, completion: @escaping (JSON) -> (), progressCallback: ((Float) -> Void)? = nil, fail: (() -> ())? = nil) {
         let url = URL(string: baseUrl + searchEndpoint)!
 
         let imageData = UIImagePNGRepresentation(image)!
         
         Alamofire.upload(
             multipartFormData: { multipartFormData in
-                multipartFormData.append(imageData, withName: "image_file")
+                multipartFormData.append(imageData, withName: "image_file", fileName: "capture.png", mimeType: "image/png")
             },
             to: url,
             encodingCompletion: { encodingResult in
                 switch encodingResult {
                 case .success(request: let upload, streamingFromDisk: _, streamFileURL: _):
+                    upload.uploadProgress { progress in
+                        progressCallback?(Float(progress.fractionCompleted))
+                    }
+                    
                     upload.responseJSON { res in
                         switch res.result {
                         case .success(let value):
@@ -43,17 +47,19 @@ class FoodRecognitionApiClient: NSObject {
                                 completion(json)
                             } else {
                                 print("error at \(#function) \(#line)")
+                                fail?()
                             }
                             
                         case .failure(let error):
                             print("error at \(#function) \(#line)")
                             print(error)
+                            fail?()
                         }
                     }
                 case .failure(let error):
                     print("error at \(#function) \(#line)")
                     print(error)
-                    // TODO: add error handling with encoding
+                    fail?()
                 }
             }
         )
