@@ -14,6 +14,12 @@ class FoodStuffHolder: NSObject {
     let keywords = Observable<[String]>([])
     let progress = Observable<Float>(0)
     var imageForProgress: UIImage?
+
+    var searchingKeywords: [String] {
+        get {
+            return Array(keywords.value.prefix(2))
+        }
+    }
     
     func getFoodKeywords(image: UIImage) {
         self.imageForProgress = image
@@ -48,7 +54,7 @@ class FoodStuffHolder: NSObject {
 
     // send only 2 items for recipes exist
     func toQueryValue() -> String {
-        return keywords.value.prefix(2).joined(separator: ",")
+        return searchingKeywords.joined(separator: ",")
     }
     
 }
