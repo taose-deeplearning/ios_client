@@ -45,9 +45,10 @@ class FoodStuffHolder: NSObject {
         
         keywords.value += newKeywords
     }
- 
+
+    // send only 2 items for recipes exist
     func toQueryValue() -> String {
-        return keywords.value.joined(separator: ",")
+        return keywords.value.prefix(2).joined(separator: ",")
     }
     
 }
